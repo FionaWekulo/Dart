@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 
 /*
 //data types
@@ -467,6 +467,61 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+*/
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MaterialApp(home: Home()));
+}
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("My first app"),
+        centerTitle: true,
+        backgroundColor: Colors.red[600],
+      ),
+      /*
+      body: Container(
+        padding: const EdgeInsets.fromLTRB(10, 20, 30, 40),
+        margin: const EdgeInsets.all(40),
+        color: Colors.grey[400],
+        child: const Text("Hello"),
+      ),*/
+      /*child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.lightBlue,
+          size: 50.0,
+          ),*/
+      /*child: Image.asset('sunset.jpg'),*/
+      /*NetworkImage('https://images.unsplash.com/photo-1536782376847-5c9d14d97cc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZnJlZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60'),
+          );*/
+      body: const Center(
+        child: Text(
+          'hello ninjas',
+          style: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 2.0,
+            color: Colors.grey,
+            fontFamily: 'Indieflower',
+          ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print("You clicked me");
+        },
+        backgroundColor: Colors.red[600],
+        child: const Text('click'),
+      ),
     );
   }
 }
